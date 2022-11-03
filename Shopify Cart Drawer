@@ -119,3 +119,415 @@
       }
     });
   });
+  
+  
+  
+  <div class="anywere anywere-home"></div>
+  
+  
+   .anywere-home {
+  background: #0E1013;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 500ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
+  pointer-events: none;
+  z-index: 50;
+}
+.anywere.show,
+.anywere-home.show {
+  visibility: visible;
+  pointer-events: visible;
+}
+.anywere.bgshow,
+.anywere-home.bgshow {
+  background: #0E1013;
+  opacity: 70%;
+  visibility: visible;
+  pointer-events: visible;
+  z-index:999;
+} 
+
+
+<section class="cart-drawer showCart">
+            <div class="bgoverlay"></div>
+            <div class="cart-drawer-inner">
+                <div class="cart-drawer-header">
+                    <h4>Shopping Cart</h4>
+                    <div class="close-btn"><button type="submit"><img src="images/close-btn.png" alt="Close btn"></button></div>
+                </div>
+                <div class="cart-drawer-content">
+                    <div class="products">
+                        <div class="row ai-c">
+                            <div class="col-1 col-s-1">
+                                <div class="remove">
+                                    <a href="#" class="delete-btn"><img src="images/delete-img.png" alt="Delete "></a>
+                                </div>
+                            </div>
+                            <div class="col-4 col-s-4">
+                                <div class="cart-drawer-prod-img">
+                                    <a href="#"><img src="images/cart-drawer-prod.png" alt="product cart"></a>
+                                </div>
+                            </div>
+                            <div class="col-7 col-s-7">
+                                <div class="cart-drawer-prod-info">
+                                    <h4><a href="#">Cascading Pothos</a></h4>
+                                    <h4>$139</h4>
+                                    <div class="cart-drawer-prod-qty">
+                                        <div class="quantity-box">
+                                            <div class="quantity-wrap">
+                                                <span id="sub" class="adjust minus"><img src="images/minus.png" alt="Minus sign"></span>
+                                                <input name="updates[]" class="count" type="text" value="1">
+                                                <span id="add" class="adjust plus"><img src="images/plus.png" alt="Plus sign"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products">
+                        <div class="row ai-c">
+                            <div class="col-1 col-s-1">
+                                <div class="remove">
+                                    <a href="#" class="delete-btn"><img src="images/delete-img.png" alt="Delete "></a>
+                                </div>
+                            </div>
+                            <div class="col-4 col-s-4">
+                                <div class="cart-drawer-prod-img">
+                                    <a href="#"><img src="images/cart-drawer-prod.png" alt="product cart"></a>
+                                </div>
+                            </div>
+                            <div class="col-7 col-s-7">
+                                <div class="cart-drawer-prod-info">
+                                    <h4><a href="#">Cascading Pothos</a></h4>
+                                    <h4>$139</h4>
+                                    <div class="cart-drawer-prod-qty">
+                                        <div class="quantity-box">
+                                            <div class="quantity-wrap">
+                                                <span id="sub" class="adjust minus"><img src="images/minus.png" alt="Minus sign"></span>
+                                                <input name="updates[]" class="count" type="text" value="1">
+                                                <span id="add" class="adjust plus"><img src="images/plus.png" alt="Plus sign"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products">
+                        <div class="row ai-c">
+                            <div class="col-1 col-s-1">
+                                <div class="remove">
+                                    <a href="#" class="delete-btn"><img src="images/delete-img.png" alt="Delete "></a>
+                                </div>
+                            </div>
+                            <div class="col-4 col-s-4">
+                                <div class="cart-drawer-prod-img">
+                                    <a href="#"><img src="images/cart-drawer-prod.png" alt="product cart"></a>
+                                </div>
+                            </div>
+                            <div class="col-7 col-s-7">
+                                <div class="cart-drawer-prod-info">
+                                    <h4><a href="#">Cascading Pothos</a></h4>
+                                    <h4>$139</h4>
+                                    <div class="cart-drawer-prod-qty">
+                                        <div class="quantity-box">
+                                            <div class="quantity-wrap">
+                                                <span id="sub" class="adjust minus"><img src="images/minus.png" alt="Minus sign"></span>
+                                                <input name="updates[]" class="count" type="text" value="1">
+                                                <span id="add" class="adjust plus"><img src="images/plus.png" alt="Plus sign"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products">
+                        <div class="row ai-c">
+                            <div class="col-1 col-s-1">
+                                <div class="remove">
+                                    <a href="#" class="delete-btn"><img src="images/delete-img.png" alt="Delete "></a>
+                                </div>
+                            </div>
+                            <div class="col-4 col-s-4">
+                                <div class="cart-drawer-prod-img">
+                                    <a href="#"><img src="images/cart-drawer-prod.png" alt="product cart"></a>
+                                </div>
+                            </div>
+                            <div class="col-7 col-s-7">
+                                <div class="cart-drawer-prod-info">
+                                    <h4><a href="#">Cascading Pothos</a></h4>
+                                    <h4>$139</h4>
+                                    <div class="cart-drawer-prod-qty">
+                                        <div class="quantity-box">
+                                            <div class="quantity-wrap">
+                                                <span id="sub" class="adjust minus"><img src="images/minus.png" alt="Minus sign"></span>
+                                                <input name="updates[]" class="count" type="text" value="1">
+                                                <span id="add" class="adjust plus"><img src="images/plus.png" alt="Plus sign"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products">
+                        <div class="row ai-c">
+                            <div class="col-1 col-s-1">
+                                <div class="remove">
+                                    <a href="#" class="delete-btn"><img src="images/delete-img.png" alt="Delete "></a>
+                                </div>
+                            </div>
+                            <div class="col-4 col-s-4">
+                                <div class="cart-drawer-prod-img">
+                                    <a href="#"><img src="images/cart-drawer-prod.png" alt="product cart"></a>
+                                </div>
+                            </div>
+                            <div class="col-7 col-s-7">
+                                <div class="cart-drawer-prod-info">
+                                    <h4><a href="#">Cascading Pothos</a></h4>
+                                    <h4>$139</h4>
+                                    <div class="cart-drawer-prod-qty">
+                                        <div class="quantity-box">
+                                            <div class="quantity-wrap">
+                                                <span id="sub" class="adjust minus"><img src="images/minus.png" alt="Minus sign"></span>
+                                                <input name="updates[]" class="count" type="text" value="1">
+                                                <span id="add" class="adjust plus"><img src="images/plus.png" alt="Plus sign"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products">
+                        <div class="row ai-c">
+                            <div class="col-1 col-s-1">
+                                <div class="remove">
+                                    <a href="#" class="delete-btn"><img src="images/delete-img.png" alt="Delete "></a>
+                                </div>
+                            </div>
+                            <div class="col-4 col-s-4">
+                                <div class="cart-drawer-prod-img">
+                                    <a href="#"><img src="images/cart-drawer-prod.png" alt="product cart"></a>
+                                </div>
+                            </div>
+                            <div class="col-7 col-s-7">
+                                <div class="cart-drawer-prod-info">
+                                    <h4><a href="#">Cascading Pothos</a></h4>
+                                    <h4>$139</h4>
+                                    <div class="cart-drawer-prod-qty">
+                                        <div class="quantity-box">
+                                            <div class="quantity-wrap">
+                                                <span id="sub" class="adjust minus"><img src="images/minus.png" alt="Minus sign"></span>
+                                                <input name="updates[]" class="count" type="text" value="1">
+                                                <span id="add" class="adjust plus"><img src="images/plus.png" alt="Plus sign"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-drawer-footer">
+                <div class="cart-drawer-footer-inner">
+                    <div class="cart-drawer-row ai-c jc-sb">
+                        <h4>subtotal:</h4>
+                        <h4 class="subtotal-price">$278</h4>
+                    </div>
+                    <div class="rte text-center">
+                        <p>Shipping, Taxes, and Discount Codes Calculated at Checkout.</p>
+                    </div>
+                    <div class="view-cart-btn text-center">
+                        <a href="#" class="btn-pink">VIEW CART</a>
+                        <a href="#" class="btn-black">CHECKOUT</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+    .cart-drawer {
+  position: fixed;
+  top: 0;
+  right: -570px;
+  max-width: 570px;
+  width: 100%;
+  background-color: #FFFFFF;
+  height: 100%;
+  z-index: 999;
+  transition: 0.3s ease-in-out all;
+  overflow-y: scroll; }
+  @media only screen and (max-width: 1550px) {
+    .cart-drawer {
+      max-width: 470px; } }
+  @media only screen and (max-width: 991px) {
+    .cart-drawer {
+      max-width: 400px; } }
+  .cart-drawer .bgoverlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.3s ease all;
+    visibility: hidden;
+    opacity: 0; }
+  .cart-drawer.showCart {
+    right: 0; }
+    .cart-drawer.showCart .bgoverlay {
+      visibility: visible;
+      opacity: 1; }
+  .cart-drawer .cart-drawer-inner {
+    height: 100vh;
+    background: #FFFFFF;
+    position: relative;
+    z-index: 1000;
+    padding: 30px; }
+    @media only screen and (max-width: 991px) {
+      .cart-drawer .cart-drawer-inner {
+        padding: 20px; } }
+  .cart-drawer .cart-drawer-header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #DDDDDD;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px; }
+    @media only screen and (max-width: 991px) {
+      .cart-drawer .cart-drawer-header {
+        padding-bottom: 20px; } }
+    .cart-drawer .cart-drawer-header h4 {
+      margin-bottom: 0;
+      letter-spacing: 1px;
+      color: #231F20;
+      font-family: "Gotham-Book"; }
+    .cart-drawer .cart-drawer-header .close-btn button {
+      background-color: transparent;
+      border: 0;
+      display: block;
+      padding: 5px 10px; }
+      .cart-drawer .cart-drawer-header .close-btn button img {
+        max-width: 25px; }
+    .cart-drawer .cart-drawer-header .close-btn.showCart .cart-drawer {
+      right: -570px; }
+  .cart-drawer .cart-drawer-content {
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    top: 92px;
+    height: calc(100% - 301px);
+    overflow-y: scroll;
+    left: 0;
+    padding: 0 30px; }
+    @media only screen and (max-width: 991px) {
+      .cart-drawer .cart-drawer-content {
+        height: calc(100% - 230px);
+        top: 66px;
+        padding: 0 20px; } }
+    @media only screen and (max-width: 767px) {
+      .cart-drawer .cart-drawer-content {
+        height: calc(100% - 226px); } }
+    .cart-drawer .cart-drawer-content .products {
+      margin: 30px 0; }
+      @media only screen and (max-width: 991px) {
+        .cart-drawer .cart-drawer-content .products {
+          margin: 20px 0; } }
+    .cart-drawer .cart-drawer-content .row {
+      flex-wrap: nowrap; }
+      .cart-drawer .cart-drawer-content .row .delete-btn img {
+        max-width: 20px; }
+        @media only screen and (max-width: 991px) {
+          .cart-drawer .cart-drawer-content .row .delete-btn img {
+            max-height: 17px; } }
+      .cart-drawer .cart-drawer-content .row .cart-drawer-prod-img a {
+        display: block; }
+        .cart-drawer .cart-drawer-content .row .cart-drawer-prod-img a img {
+          background: #FFFFFF;
+          border: 1px solid #DDDDDD;
+          display: block; }
+      .cart-drawer .cart-drawer-content .row h4 {
+        color: #333333;
+        font-family: "Gotham-Book";
+        margin-bottom: 15px; }
+        @media only screen and (max-width: 767px) {
+          .cart-drawer .cart-drawer-content .row h4 {
+            margin-bottom: 10px; } }
+      @media only screen and (max-width: 767px) {
+        .cart-drawer .cart-drawer-content .row .cart-drawer-prod-qty .quantity-box {
+          width: 90px; }
+          .cart-drawer .cart-drawer-content .row .cart-drawer-prod-qty .quantity-box .quantity-wrap span img {
+            max-width: 10px; }
+          .cart-drawer .cart-drawer-content .row .cart-drawer-prod-qty .quantity-box .quantity-wrap input {
+            line-height: 17px;
+            width: 45px; } }
+
+.cart-drawer-footer {
+  position: absolute;
+  bottom: 0;
+  background: #fff;
+  width: 100%;
+  left: 0;
+  z-index: 1000; }
+  .cart-drawer-footer .cart-drawer-footer-inner {
+    padding: 0 30px 30px; }
+    @media only screen and (max-width: 991px) {
+      .cart-drawer-footer .cart-drawer-footer-inner {
+        padding: 0 20px 20px; } }
+  .cart-drawer-footer .cart-drawer-row {
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+    display: flex;
+    padding: 20px 0;
+    margin-bottom: 20px; }
+    @media only screen and (max-width: 991px) {
+      .cart-drawer-footer .cart-drawer-row {
+        padding: 15px 0;
+        margin-bottom: 10px; } }
+    .cart-drawer-footer .cart-drawer-row h4 {
+      margin-bottom: 0;
+      color: #393939;
+      text-transform: uppercase; }
+      .cart-drawer-footer .cart-drawer-row h4.subtotal-price {
+        font-family: "GothamMedium"; }
+  .cart-drawer-footer .rte {
+    margin-bottom: 20px; }
+    @media only screen and (max-width: 991px) {
+      .cart-drawer-footer .rte {
+        margin-bottom: 10px;
+        font-size: 12px; } }
+  .cart-drawer-footer .view-cart-btn .btn-black, .cart-drawer-footer .view-cart-btn .btn-pink {
+    max-width: 200px;
+    width: 100%;
+    margin-bottom: 10px;
+    letter-spacing: 0.06em;
+    font-family: "GothamMedium";
+    margin: 0 5px; }
+    @media only screen and (max-width: 1550px) {
+      .cart-drawer-footer .view-cart-btn .btn-black, .cart-drawer-footer .view-cart-btn .btn-pink {
+        max-width: 160px; } }
+    @media only screen and (max-width: 991px) {
+      .cart-drawer-footer .view-cart-btn .btn-black, .cart-drawer-footer .view-cart-btn .btn-pink {
+        max-width: 120px;
+        padding: 6px 15px;
+        margin-bottom: 0; } }
+    
+        
+        
+        
+  
+  
+  
+  
