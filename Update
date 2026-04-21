@@ -1,0 +1,48 @@
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const addToCartForm = document.querySelector('#hero-form');
+
+  if (addToCartForm) {
+    addToCartForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const formData = new FormData(addToCartForm);
+
+      fetch("/cart/add.js", {
+        method: "POST",
+        body: formData,
+      })
+      .then((res) => res.json())
+      .then(() => {
+
+        return fetch('/?section_id=xo-cart-mini');
+
+      })
+      .then(res => res.text())
+      .then(html => {
+
+        const tempDiv = document.createElement('div');
+        tempDiv.innerHTML = html;
+
+        const newDrawer = tempDiv.querySelector('.xo-cart-mini');
+        const existingDrawer = document.querySelector('.xo-cart-mini');
+
+        if (newDrawer && existingDrawer) {
+          existingDrawer.innerHTML = newDrawer.innerHTML;
+        }
+
+        // 🔥 OPEN CART DRAWER (XO NATIVE WAY)
+            const cartTrigger = document.querySelector('xo-modal-trigger[xo-name="cart"]');
+            if (cartTrigger) {
+              cartTrigger.click();
+            }
+
+      })
+      .catch((error) => console.error("Add to cart error:", error));
+    });
+  }
+
+});
+</script>
